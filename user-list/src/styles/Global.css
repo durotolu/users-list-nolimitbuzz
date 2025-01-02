@@ -3,4 +3,14 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f5f5f5;
+  pointer-events: auto;
+}
+
+a, Link {
+  cursor: pointer;
+  background-color:  #38844F;
+  color: white;
+  text-decoration: none;
+  padding: .3em;
+  border-radius: 5px;
 }
