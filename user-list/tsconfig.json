@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "types": ["react", "react-dom", "jest", "@testing-library/jest-dom"],
+    "target": "es5",                                // Transpile TypeScript to ES5 (for compatibility with older browsers)
+    "lib": ["dom", "dom.iterable", "esnext"],       // Use the latest ES libraries + DOM types
+    "allowJs": true,                                // Allow JavaScript files in the project
+    "skipLibCheck": true,                           // Skip type checking of declaration files (speeds up compilation)
+    "esModuleInterop": true,                        // Enable esModuleInterop to work with CommonJS modules
+    "allowSyntheticDefaultImports": true,           // Allows default imports from modules with no default export
+    "strict": true,                                 // Enable strict type-checking options
+    "forceConsistentCasingInFileNames": true,       // Ensure consistent casing in file names
+    "module": "esnext",                             // Use ES module system (modern JavaScript)
+    "moduleResolution": "node",                     // Resolve modules as Node.js does
+    "resolveJsonModule": true,                      // Allow importing JSON files as modules
+    "isolatedModules": true,                        // Ensures each file is treated as an isolated module (important for JSX)
+    "jsx": "react-jsx",                             // Use the new JSX Transform from React 17+
+    "noEmit": true,                                 // Do not output any compiled files (for CRA, since Webpack handles this)
+    "skipDefaultLibCheck": true,                    // Skip checking default libraries
+    "strictFunctionTypes": true,                    // Enforce strict function type checking
+    "strictNullChecks": true,                       // Ensure strict null checking
+    "noUnusedLocals": true,                         // Throw errors for unused local variables
+    "noUnusedParameters": true                      // Throw errors for unused function parameters
+  },
+  "include": [
+    "src/declarations.d.ts",
+    "src"                                            // Include the 'src' directory for type checking
+  ],
+  "exclude": [
+    "node_modules",                                  // Exclude the 'node_modules' folder from being compiled
+    "build"                                          // Exclude 'build' (output directory) from being compiled
+  ]
+}
