@@ -12,14 +12,14 @@ The app should allow the user to view a list of user cards and navigate to one u
 ## Install
 
 ```sh
-cd .\user-list\
+cd user-list
 npm install
 ```
 
 ## Usage
 
 ```sh
-cd .\user-list\
+cd user-list
 npm start
 ```
 
